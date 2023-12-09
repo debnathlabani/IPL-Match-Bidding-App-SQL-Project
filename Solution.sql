@@ -200,21 +200,3 @@ select BIDDER_ID,TOTAL_POINTS,
  JOIN ipl_bidder_details using(bidder_id)
  WHERE year(bid_date)=2018 ;
  
--- 16.	Create two tables called Student_details and Student_details_backup.
-
-create table Student_details (
-Student_id int not null primary key, 
-Student_name varchar(20) not null, 
-mail_id varchar(20), 
-mobile_no bigint
-)
-;
-insert into student_details values(1,'Ram','ram@gmaik.com',9876543210);
-select * from student_details;
-create table Student_details_backup as select * from Student_details;
-select * from student_details_backup;
-create trigger insert_trig
-after insert on Student_details
-for each row
-insert into Student_details_backup (Student_id,student_name,mail_id,mobile_no) 
-values (new.Student_id,new.student_name,new.mail_id,new.mobile_no);
