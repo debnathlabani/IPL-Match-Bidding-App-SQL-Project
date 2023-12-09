@@ -43,7 +43,7 @@ Output columns should be like the below:
 
 13.	Write a query to display to calculate the total points month-wise for the 2017 bid year. sort the results based on total points in descending order and month-wise in ascending order.
 Note: Display the following columns:
-1.	Bidder ID, 2. Bidder Name, 3. bid date as Year, 4. bid date as Month, 5. Total points
+        1.	Bidder ID, 2. Bidder Name, 3. bid date as Year, 4. bid date as Month, 5. Total points
 Only use joins for the above query queries.
 
 14.	Write a query for the above question using sub queries by having the same constraints as the above question.
