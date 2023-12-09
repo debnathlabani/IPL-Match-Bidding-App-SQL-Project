@@ -1,5 +1,5 @@
-**Pie-in-the-Sky
-IPL Match Bidding App**
+**Pie-in-the-Sky**
+**IPL Match Bidding App**
 
 Pie-in-the-Sky is a mobile app that is used for bidding for IPL matches legally. Any registered user can bid for any of the IPL matches listed in it. New users or bidders need to register themselves into the app by providing their mobile phone number, email id, and password. Admin will maintain the match roster and keep updating other details in the system.
 The app shows the match details which include the playing team, the venue of the match, and the current standing of the teams on the points table. It will display the winner at the end of the match and update the team standings in the tournament and bidder points table. System will send updates to the bidders whenever required. It will also generate the bidders' leaderboard.
@@ -30,10 +30,10 @@ all-rounders in descending order.
 
 10.	Extract the Bowlers and All Rounders those are in the 5 highest number of wickets.
 Note 
-1. use the performance_dtls column from ipl_player to get the total number of wickets
- 2. Do not use the limit method because it might not give appropriate results when players have the same number of wickets
-3.	Do not use joins in any cases.
-4.	Display the following columns teamn_name, player_name, and player_role.
+        * use the performance_dtls column from ipl_player to get the total number of wickets
+        * Do not use the limit method because it might not give appropriate results when players have the same number of wickets
+        *	Do not use joins in any cases.
+        *	Display the following columns teamn_name, player_name, and player_role.
 
 11.	show the percentage of toss wins of each bidder and display the results in descending order based on the percentage
 
